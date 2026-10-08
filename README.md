@@ -2,6 +2,15 @@
 
 This project contains the notebook used for the paper "Joint Use of Time Series and Graph Data for Fake Comment Detection in CafeBazaar Dataset". It builds app-level time-series features from review timing, rating deviation, and weekly review counts, then trains an LSTM autoencoder to learn what a normal review pattern looks like. Reviews with unusually high reconstruction error are treated as suspicious.
 
+Implementation of the "Joint Use of Time Series and Graph Data for Fake Comment Detection in CafeBazaar Dataset" paper: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11153829
+
+This is the first version of the code that I developed in 2016.
+In 2026, I used Copilot to clean up the code and make it more clear but didn't change the logic of the code.
+
+It follows the same idea as the original work: build app-level time-series features from review timing, rating deviation, and weekly review counts, then use an LSTM autoencoder to detect abnormal review patterns.
+
+The output of this pipeline will be an input to the Rev2's implementation. You can find the code fo Rev2 here: https://cs.stanford.edu/~srijan/rev2/
+
 ## Contents
 
 - `fake_comment_detection.ipynb` — main analysis and model workflow
